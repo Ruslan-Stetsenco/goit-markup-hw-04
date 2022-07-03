@@ -192,8 +192,8 @@ img {
 }
 /* background-img */
 .hero {
-  min-width: 1600px;
-  height: 600px;
+  max-width: 1600px;
+  /* height: 600px; */
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -357,7 +357,7 @@ img {
 .team-sosials {
   display: flex;
   justify-content: space-between;
-  padding-top: 16px;
+  margin-top: 16px;
 }
 
 .team-icon {
@@ -367,11 +367,9 @@ img {
 }
 
 .team-background-icon {
-  display: block;
   height: 44px;
   width: 44px;
-  display: inline-block;
-  padding: 12px;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -441,9 +439,9 @@ img {
   color: var(--background-card-team);
 }
 
-.link-list-footer {
+.address-footer {
   margin-top: 20px;
-}
+} 
 
 .link-address {
   font-style: normal;
@@ -459,24 +457,30 @@ img {
 
 .filling {
   display: flex;
+  align-items: baseline;
 }
 
-.subscribe-section {
-  padding-left: 70px;
-  padding-top: 8px;
-  width: 276px;
+.first-box{
+  margin-right: 70px;
+  
 }
 
 .subscribe-background {
-  display: block;
+  display: flex;
   height: 44px;
   width: 44px;
-  display: inline-block;
-  padding: 12px;
   justify-content: center;
   align-items: center;
   background-color: var(--footer-background-icon);
   border-radius: 50%;
+}
+
+.subscribe-list{
+  margin-right: 10px;
+}
+
+.subscribe-list:last-child{
+  margin-right: 0px;
 }
 
 .subscribe-background:hover,
